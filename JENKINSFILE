@@ -13,7 +13,7 @@ url: 'https://github.com/mss-morning-projects/maven-web-application.git'
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
-
+/*
 stage('ExecuteSonarQubeReport'){
 sh "${mavenHome}/bin/mvn clean sonar:sonar"
 }
@@ -28,5 +28,5 @@ sshagent(['e3377d48-bad3-4d9e-a8e1-e8006a63f3b2']) {
 "
 }
 }
-
+*/
 }
